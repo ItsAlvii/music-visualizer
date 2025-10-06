@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Music Visualizer running on port ${PORT}`);
 });
 

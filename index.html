@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Music Visualizer</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{margin:0;background:#0b0b12;color:#fff;font-family:sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;height:100vh}
+    header{padding:16px;text-align:center}
+    #controls{margin:10px}
+    canvas{width:100%;height:60vh;display:block}
+    .center{max-width:900px;width:100%}
+  </style>
+</head>
+<body>
+  <header class="center">
+    <h1>Music Visualizer</h1>
+    <div id="controls">
+      <input id="file" type="file" accept="audio/*">
+      <button id="play">Play</button>
+    </div>
+  </header>
+  <main class="center">
+    <canvas id="c"></canvas>
+  </main>
+  <script src="/static/visualizer.js"></script>
+</body>
+</html>
+
